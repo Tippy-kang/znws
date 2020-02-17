@@ -1,0 +1,103 @@
+/**
+    * 查询-搜索条 公共样式
+    */
+    /*头部导航*/
+    .search-bar {
+      width: 100%;
+      margin-bottom: 10px;
+      overflow: hidden;
+      .el-input--small .el-input__inner {
+          height: 38px;
+          line-height: 38px;
+          font-size: $fSizelaster;
+      }
+      .el-input__inner{
+          font-size: $fSizelaster;
+      }
+      .el-input.is-active .el-input__inner,
+      .el-input__inner:focus,
+      .el-input__inner:hover{
+        border-color: #0C69D0;
+      }
+      .el-input.is-focus .el-select__caret {
+        color: #0C69D0;
+      }
+      .search-fl {
+          li {
+            list-style: none;
+            float: left;
+            margin-right: 6px;
+            height: 38px;
+            line-height: 38px;
+            &.search-msg{
+              margin-right: 22px;
+            }
+            //常用按钮
+            .blueBtn{
+                  padding: 8px 10px;
+                  font-size: $fSizelaster;
+                  color: #fff;
+                  background: #1660c7;
+                  border: 1px solid #1660c7;
+                  &:hover{
+                      color: #FFF;
+                      background: #2674e0;
+                      border: 1px solid #2674e0;
+                  }
+                  &.is-disabled{
+                      color: #fff;
+                      background: #bdbdbd;
+                      border: 1px solid #bdbdbd;
+                  }
+                  .iconfont{
+                    margin-right: 5px;
+                    font-size: $fSizelaster
+                  }
+              }
+              //删除按钮
+              .deleBtn{
+                  padding: 8px 10px;
+                  font-size: $fSizelaster;
+                  color: #fff;
+                  background: #ED484C;
+                  border: 1px solid #ED484C;
+                  &:hover{
+                      color: #FFF;
+                      background: #f66b6e;
+                      border: 1px solid #f66b6e;
+                  }
+                  &.is-disabled{
+                      color: #fff;
+                      background: #bdbdbd;
+                      border: 1px solid #bdbdbd;
+                  }
+                  .iconfont{
+                    margin-right: 5px;
+                    font-size: $fSizelaster
+                  }
+              }
+            div {
+              vertical-align: top;
+            }
+
+            .liText {
+              line-height: 38px;
+              font-size: $fSizelaster;
+            }
+            .el-input{
+              width:70%
+            }
+            .el-input__icon {
+              line-height: 38px;
+            }
+            .yearStyle{
+              &.el-select{
+                width: 100px;
+              }
+            }
+          }
+      }
+      .search-fr {
+          float: right;
+      }
+    }

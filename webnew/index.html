@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<script>
+window.onload=function(){
+  IEVersion()
+}
+
+//判断ie浏览器版本
+function IEVersion() {
+  var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串
+  var isIE = userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1; //判断是否IE<11浏览器
+  var isEdge = userAgent.indexOf("Edge") > -1 && !isIE; //判断是否IE的Edge浏览器
+  var isIE11 = userAgent.indexOf('Trident') > -1 && userAgent.indexOf("rv:11.0") > -1;
+  if(isIE) {
+      var reIE = new RegExp("MSIE (\\d+\\.\\d+);");
+      reIE.test(userAgent);
+      var fIEVersion = parseFloat(RegExp["$1"]);
+      if(fIEVersion == 7) {
+        location.href("./static/download.html")
+      } else if(fIEVersion == 8) {
+        location.href("./static/download.html");
+      } else if(fIEVersion == 9) {
+        location.href("./static/download.html");
+      } else if(fIEVersion == 10) {
+        location.href("./static/download.html");
+      } else {
+        location.href("./static/download.html");
+      }
+  } else if(isEdge) {
+      return 'edge';//edge
+  } else if(isIE11) {
+      return location.href("./static/download.html");
+  }else{
+      return -1;//不是ie浏览器
+  }
+}
+
+
+</script>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="pragram" content="no-cache">
+  <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="renderer" content="webkit" />
+  <link rel="icon" href="./static/bitbug_favicon.ico" type="image/x-icon" />
+  <title>工作生活新平台</title>
+  <script src="./static/server.js"></script>
+</head>
+
+<body class="paddRight">
+<div id="app"></div>
+<!-- built files will be auto injected -->
+<script language="javascript">
+  document.write('<script src="./static/server.js?v='+(new Date()).getTime()+'"><\/script>');
+  var scrollFunc = function (e) {
+    e = e || window.event;
+    if (e.wheelDelta && event.ctrlKey) { //IE/Opera/Chrome
+      event.returnValue = false;
+    } else if (e.detail) {//Firefox
+      event.returnValue = false;
+    }
+  }
+  /*注册事件*/
+  if (document.addEventListener) {
+    document.addEventListener('DOMMouseScroll', scrollFunc, false);
+  }//W3C
+  window.onmousewheel = document.onmousewheel = scrollFunc;//IE/Opera/Chrome/Safari
+
+  
+</script>
+</body>
+<style>
+.paddRight{
+  padding-right: 0 !important;
+}
+.tiphidden{
+  display: none !important;
+}
+</style>
+</html>

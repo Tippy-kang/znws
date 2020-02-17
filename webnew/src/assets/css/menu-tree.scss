@@ -1,0 +1,32 @@
+.menu-tree {
+    width: 300px;
+    max-width: 300px;
+    color: #333;
+    background-color: #fff;
+    border-radius: 3px;
+    padding:20px 0 0 15px;
+    border-right: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    .menu-btn {
+      margin-bottom: 20px;
+      display: flex;
+      //flex-flow: row nowrap;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-right: 15px;
+  
+      .el-button--small {
+        flex: 0 0 22%;
+        font-size: 16px;
+        padding: 8px 10px;
+      }
+    }
+    .userTree{
+      background: transparent;
+      .el-tree-node__content{
+        height: 36px;
+        line-height: 36px;
+      }
+    }
+  }
+  

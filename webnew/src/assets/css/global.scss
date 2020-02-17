@@ -1,0 +1,97 @@
+@charset "UTF-8";
+@import "./variable.scss";
+@import "./rest.scss";
+@import "./search-bar.scss";
+
+html {
+  height: 100vh;
+  font-family: "SimSun,Avenir,Helvetica Neue,Arial,Helvetica,sans-serif";
+}
+
+body {
+  zoom: 1;
+  font-variant: tabular-nums;
+  overflow: auto;
+  // min-width: 1280px;
+}
+
+body,
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+table,
+td,
+img,
+div,
+dl,
+dt,
+dd,
+input,
+figure {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "SimSun"
+}
+
+body {
+  -webkit-overflow-scrolling: touch;
+  text-align: left;
+  max-height: 100%;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  outline: none;
+}
+
+li {
+  list-style: none
+}
+
+img {
+  border: none;
+  max-width: 100%;
+}
+
+input,
+select,
+textarea {
+  border: none;
+  outline: none;
+  background: none
+}
+
+i {
+  font-style: normal
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+.clearFix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
